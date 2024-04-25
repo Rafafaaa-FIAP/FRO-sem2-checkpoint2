@@ -1,0 +1,32 @@
+.carousel-indicators li {
+  list-style: none;
+}
+
+.card-text {
+  text-align: justify;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border: .25rem solid transparent;
+  border-radius: 999px;
+  background-clip: padding-box;
+  background-color: var(--bs-black);
+}
+
+
+
+div#destaques div.carousel {
+  border-radius: 0.375rem;
+  overflow: hidden;
+}
+
+div#sobreNos div.historia p {
+  text-indent: 3rem;
+  text-align: justify;
+}

@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="pt-br" class="h-100">
+  <head>
+    <title>Zé Pastel</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+
+  <body class="d-flex flex-column h-100">
+    <header>
+      <nav
+        class="navbar navbar-expand-sm navbar-light bg-light"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#">Zé Pastel</a>
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#" aria-current="page"
+                  >Início
+                  <span class="visually-hidden">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cardápio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre Nós</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="py-sm-3 py-lg-5 d-flex flex-column gap-5">
+      <div id="destaques" class="container">
+        <div class="row text-center">
+          <div class="col">
+            <h2>Destaques</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-0 col-md-1 col-lg-2"></div>
+          <div class="col-sm-12 col-md-10 col-lg-8">
+            <div class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <ol class="carousel-indicators">
+                <li
+                  data-bs-target="#destaques"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="First slide"
+                ></li>
+                <li
+                  data-bs-target="#destaques"
+                  data-bs-slide-to="1"
+                  aria-label="Second slide"
+                ></li>
+                <li
+                  data-bs-target="#destaques"
+                  data-bs-slide-to="2"
+                  aria-label="Third slide"
+                ></li>
+              </ol>
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <img
+                    src="/assets/images/pastel-queijo.png"
+                    class="w-100 d-block"
+                    alt="First slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/assets/images/pastel-carne.png"
+                    class="w-100 d-block"
+                    alt="Second slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/assets/images/pastel-frango.png"
+                    class="w-100 d-block"
+                    alt="Third slide"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#destaques"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#destaques"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            
+            <!-- <div id="destaques" class="carousel slide" data-bs-ride="carousel">
+              <ol class="carousel-indicators">
+                <li
+                  data-bs-target="#destaques"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="First slide"
+                ></li>
+                <li
+                  data-bs-target="#destaques"
+                  data-bs-slide-to="1"
+                  aria-label="Second slide"
+                ></li>
+                <li
+                  data-bs-target="#destaques"
+                  data-bs-slide-to="2"
+                  aria-label="Third slide"
+                ></li>
+              </ol>
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <img
+                    src="/assets/images/pastel-queijo.png"
+                    class="w-100 d-block"
+                    alt="First slide"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h3>Title</h3>
+                    <p>Description</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/assets/images/pastel-carne.png"
+                    class="w-100 d-block"
+                    alt="Second slide"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h3>Title</h3>
+                    <p>Description</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/assets/images/pastel-queijo.png"
+                    class="w-100 d-block"
+                    alt="Third slide"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h3>Title</h3>
+                    <p>Description</p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#destaques"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#destaques"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div> -->
+          </div>
+          <div class="col-sm-0 col-md-1 col-lg-2"></div>
+        </div>
+      </div>
+      
+      <div id="cardapio" class="container">
+        <div class="row text-center">
+          <div class="col">
+            <h2>Cardápio</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-lg-4 p-3 d-flex align-items-stretch">
+            <div class="card">
+              <img src="/assets/images/pastel-queijo.png" class="card-img-top" alt="Pastel de Queijo">
+              <div class="card-body d-flex flex-column justify-content-between align-items-start">
+                <h5 class="card-title">Pastel de Queijo</h5>
+                <p class="card-text">O pastel de queijo do Zé Pastel é um clássico atemporal, feito com queijos de alta qualidade que se derretem na boca, criando uma explosão de sabor irresistível.</p>
+                <p>
+                  <b>R$ 10,00</b>
+                </p>
+                <a href="#" class="btn btn-dark">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 p-3 d-flex align-items-stretch">
+            <div class="card">
+              <img src="/assets/images/pastel-carne.png" class="card-img-top" alt="Pastel de Carne">
+              <div class="card-body d-flex flex-column justify-content-between align-items-start">
+                <h5 class="card-title">Pastel de Carne</h5>
+                <p class="card-text">Carne moída temperada com especiarias secretas, refogada com cebola e alho até alcançar a textura suculenta ideal, tudo envolto em uma massa crocante.</p>
+                <p>
+                  <b>R$ 10,00</b>
+                </p>
+                <a href="#" class="btn btn-dark">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 p-3 d-flex align-items-stretch">
+            <div class="card">
+              <img src="/assets/images/pastel-frango.png" class="card-img-top" alt="Pastel de Frango">
+              <div class="card-body d-flex flex-column justify-content-between align-items-start">
+                <h5 class="card-title">Pastel de Frango</h5>
+                <p class="card-text">Frango desfiado temperado com ervas frescas, refogado com legumes coloridos e um toque de catupiry cremoso, tudo isso envolto em uma massa crocante que derrete na boca.</p>
+                <p>
+                  <b>R$ 10,00</b>
+                </p>
+                <a href="#" class="btn btn-dark">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="sobreNos" class="container">
+        <div class="row text-center">
+          <div class="col">
+            <h2>Sobre Nós</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col historia">
+            <p>Em meio à agitação da feira livre da cidade, um aroma irresistível pairava no ar, atraindo olhares e aguçando paladares. Era lá que o Zé Pastel reinava, um reino de massa crocante e recheios fartos que conquistava corações e estômagos há mais de cinco décadas. Zé, o fundador, era mais que um simples vendedor de pastéis. Era um maestro da culinária, um artista que transformava ingredientes simples em obras-primas de sabor. Seus pastéis eram mais do que comida, eram abraços calorosos, pedaços da história da cidade contados em cada mordida.</p>
+            <p>Com o passar dos anos, a barraca do Zé Pastel se tornou um ponto de encontro para a comunidade. Era lá que famílias se reuniam aos domingos para saborear o tradicional pastel de carne com queijo, enquanto amigos colocavam a conversa em dia regados a goles de suco de laranja fresco. Era um lugar onde todos se sentiam acolhidos, onde o tempo parecia desacelerar e a vida se resumia aos prazeres simples da boa comida e da companhia agradável. Mas o segredo do sucesso do Zé Pastel não se limitava apenas à sua deliciosa receita. Era a paixão, a dedicação e o amor pelo que faziam que diferenciavam a pastelaria. Zé transmitiu esses valores para seus filhos, que assumiram o negócio com o mesmo entusiasmo e compromisso com a qualidade.</p>
+            <p>Hoje, a equipe do Zé Pastel é formada por pessoas que se orgulham de fazer parte da história da família. Trabalham com alegria e paixão, movidos pelo desejo de oferecer aos seus clientes a melhor experiência possível. Acreditam que cada pastel é uma oportunidade de criar um momento especial, de transformar um dia comum em algo memorável.</p>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col">
+            <h3>Valores</h2>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-sm-6 col-lg-3 p-3 d-flex align-items-stretch">
+            <div class="card">
+              <div class="card-body d-flex flex-column gap-3">
+                <i class="bi bi-star-fill"></i>
+                <h4 class="card-title">Qualidade</h4>
+                <p class="card-text text-center">Acreditam que a qualidade dos ingredientes e do preparo é fundamental para oferecer um produto de excelência. Usam apenas ingredientes frescos e de alta qualidade, e seguem rigorosamente a receita original de Zé.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 p-3 d-flex align-items-stretch">
+            <div class="card">
+              <div class="card-body d-flex flex-column gap-3">
+                <i class="bi bi-bag-check-fill"></i>
+                <h4 class="card-title">Tradição</h4>
+                <p class="card-text text-center">Respeitam a tradição e a história da pastelaria, mas também estão abertos à inovação. Criam novos sabores e recheios, sempre buscando surpreender seus clientes, mas sem jamais perder a essência do que faz o Zé Pastel tão especial.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 p-3 d-flex align-items-stretch">
+            <div class="card">
+              <div class="card-body d-flex flex-column gap-3">
+                <i class="bi bi-heart-fill"></i>
+                <h4 class="card-title">Família</h4>
+                <p class="card-text text-center">Consideram seus clientes como parte da família. Criam um ambiente acolhedor e amigável, onde todos se sintam bem-vindos e apreciados.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 p-3 d-flex align-items-stretch">
+            <div class="card">
+              <div class="card-body d-flex flex-column gap-3">
+                <i class="bi bi-person-arms-up"></i>
+                <h4 class="card-title">Comunidade</h4>
+                <p class="card-text text-center">São parte ativa da comunidade local. Apoiam eventos beneficentes, doam alimentos para instituições de caridade e participam de ações para o desenvolvimento da região.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col">
+            <h3>Nossa Equipe</h2>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- <div>sobre nós - historia da pastelaria, valores da empresa e equipe</div>
+
+      <div>contato - formulário de contato (nome, email e mensagem) e infos de contato (telefone e endereço)</div>
+
+      <div>rodapé com infos adicionas, links redes sociais e direitos autorais</div> -->
+    </main>
+    <footer class="footer mt-auto py-3 bg-light">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-4">O Zé Pastel é mais do que uma pastelaria</div>
+          <div class="col-lg-4 d-flex justify-content-center gap-3">
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-whatsapp"></i></a>
+          </div>
+          <div class="col-lg-4">2023@Todos os direitos reservados</div>
+        </div>
+        
+      </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
